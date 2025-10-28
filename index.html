@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ehtijad Ali - Artificial Intelligence and Machine Learning Engineer</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loader-container">
+            <div class="loader"></div>
+            <div class="loader"></div>
+            <div class="loader"></div>
+        </div>
+        <div class="loader-text">INITIALIZING SYSTEM...</div>
+    </div>
+
+    <!-- Background Video -->
+    <div class="video-background">
+        <video autoplay muted loop id="bgVideo">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-digital-grid-animation-39790-large.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">EHTIJAD ALI</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">HOME</a></li>
+                <li><a href="#about" class="nav-link">ABOUT</a></li>
+                <li><a href="#skills" class="nav-link">SKILLS</a></li>
+                <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+                <li><a href="#experience" class="nav-link">EXPERIENCE</a></li>
+                <li><a href="#blog" class="nav-link">BLOG</a></li>
+                <li><a href="#contact" class="nav-link">CONTACT</a></li>
+                <li>
+                    <button id="themeToggle" class="theme-toggle">
+                        <i id="themeIcon" class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+            <button id="mobileMenuToggle" class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Music Player -->
+    <div class="music-player">
+        <button id="musicToggle" class="music-toggle">
+            <i id="musicIcon" class="fas fa-play"></i>
+        </button>
+        <div class="music-info">
+            <div class="music-title">Background Music</div>
+            <div class="music-artist">Artificial Intelligence and Machine Learning Engineer</div>
+        </div>
+    </div>
+
+    <!-- Sound Wave Animation -->
+    <div id="soundWave" class="sound-wave paused">
+        <div class="sound-bar"></div>
+        <div class="sound-bar"></div>
+        <div class="sound-bar"></div>
+        <div class="sound-bar"></div>
+        <div class="sound-bar"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>EHTIJAD ALI</h1>
+                <h2>AI & ML ENGINEER</h2>
+                <div class="typing-text">
+                    <span id="typingText"></span>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">HIRE ME</a>
+                    <a href="#projects" class="btn btn-secondary">VIEW PROJECTS</a>
+                    <a id="downloadCV" href="#" class="btn btn-secondary">DOWNLOAD CV</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-img-container">
+                    <img src="https://iili.io/K6VYmIp.jpg" alt="Ehtijad Ali" class="profile-img">
+                    <div class="profile-badge">AI EXPERT</div>
+                    <div class="freelance-badge">
+                        <i class="fas fa-check-circle"></i> AVAILABLE FOR HIRE
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="scrollIndicator" class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">ABOUT ME</h2>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-up">
+                    <h3>Artificial Intelligence and Machine Learning ENGINEER WITH A PASSION FOR INNOVATION</h3>
+                    <p>I'm a dedicated AI and Machine Learning Engineer with expertise in developing intelligent systems that solve real-world problems. With a strong background in deep learning, computer vision, and natural language processing, I transform complex data into actionable insights.</p>
+                    <p>My journey in AI began with a fascination for how machines can learn and adapt. Today, I specialize in building end-to-end ML solutions, from data preprocessing to model deployment, with a focus on performance, scalability, and ethical AI practices.</p>
+                    <p>When I'm not coding or training models, you'll find me exploring the latest AI research, contributing to open-source projects, or sharing my knowledge through technical writing and mentoring.</p>
+                </div>
+                <div class="skills-grid" data-aos="fade-up">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                        <div class="skill-name">Deep Learning</div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                        <div class="skill-name">Machine Learning</div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-eye"></i></div>
+                        <div class="skill-name">Computer Vision</div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-language"></i></div>
+                        <div class="skill-name">Natural Language Processing</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">TECHNICAL SKILLS</h2>
+            <div class="skills-content">
+                <div class="technical-skills" data-aos="fade-up">
+                    <h3>TECHNICAL EXPERTISE</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <div class="skill-name">Python</div>
+                            <div class="skill-percentage">95%</div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <div class="skill-name">TensorFlow & PyTorch</div>
+                            <div class="skill-percentage">90%</div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <div class="skill-name">Machine Learning</div>
+                            <div class="skill-percentage">92%</div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="92"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <div class="skill-name">Computer Vision</div>
+                            <div class="skill-percentage">88%</div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="88"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <div class="skill-name">Natural Language Processing</div>
+                            <div class="skill-percentage">85%</div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="85"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="soft-skills" data-aos="fade-up">
+                    <h3>SOFT SKILLS</h3>
+                    <div class="soft-skills-grid">
+                        <div class="soft-skill-card">
+                            <div class="soft-skill-icon"><i class="fas fa-lightbulb"></i></div>
+                            <div class="soft-skill-name">Problem Solving</div>
+                        </div>
+                        <div class="soft-skill-card">
+                            <div class="soft-skill-icon"><i class="fas fa-users"></i></div>
+                            <div class="soft-skill-name">Team Collaboration</div>
+                        </div>
+                        <div class="soft-skill-card">
+                            <div class="soft-skill-icon"><i class="fas fa-chart-line"></i></div>
+                            <div class="soft-skill-name">Analytical Thinking</div>
+                        </div>
+                        <div class="soft-skill-card">
+                            <div class="soft-skill-icon"><i class="fas fa-comments"></i></div>
+                            <div class="soft-skill-name">Communication</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">FEATURED PROJECTS</h2>
+            <div class="filter-buttons" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">ALL</button>
+                <button class="filter-btn" data-filter="ai-ml">AI & ML</button>
+                <button class="filter-btn" data-filter="data-science">DATA SCIENCE</button>
+                <button class="filter-btn" data-filter="web-apps">WEB APPS</button>
+            </div>
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Projects will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">PROFESSIONAL EXPERIENCE</h2>
+            <div class="timeline" id="timeline">
+                <!-- Timeline items will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">LATEST BLOG POSTS</h2>
+            <div class="blog-grid" id="blogGrid">
+                <!-- Blog posts will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">GET IN TOUCH</h2>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-up">
+                    <h3>LET'S COLLABORATE</h3>
+                    <p>I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div>ehtyalee1919@gmail.com</div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div>+92 345 5458483</div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>Gilgit-Baltistan, Pakistan</div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Ehtijad-Ali" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/Ehtijad-Ali" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.fiverr.com/sellers/saaimhl/edit" target="_blank" class="social-link">
+                            <svg class="fiverr-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm1.871 16.5h-1.742V7.5h1.742v9zm-3.484 0H8.645V7.5h1.742v9zm3.484-10.742h-5.226V4.258h5.226v1.5z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/hl_saaim" target="_blank" class="social-link">
+                            <svg class="instagram-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61579981664608" target="_blank" class="social-link">
+                            <svg class="facebook-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://medium.com/@ehtyalee1919" target="_blank" class="social-link">
+                            <i class="fab fa-medium"></i>
+                        </a>
+                        <a href="https://public.tableau.com/app/profile/ehtijad.ali1919/vizzes" target="_blank" class="social-link">
+                            <svg class="tableau-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.5 12.5c0 1.58-.875 2.95-2.148 3.56.84.38 1.543 1.02 2.003 1.81.459.79.704 1.698.704 2.624C23 22.43 21.43 24 19.494 24c-1.936 0-3.506-1.57-3.506-3.506 0-.926.245-1.834.704-2.624.46-.79 1.163-1.43 2.003-1.81.447-.203.938-.33 1.45-.36.506-.03 1.018.025 1.504.158.486.133.945.342 1.353.618.408.276.76.61 1.042.99.282.38.49.808.618 1.263.128.455.174.93.136 1.403zM12.5 22.5c0 .927-.245 1.835-.704 2.625-.46.79-1.163 1.43-2.003 1.81-.447.203-.938.33-1.45.36-.506.03-1.018-.025-1.504-.158-.486-.133-.945-.342-1.353-.618-.408-.276-.76-.61-1.042-.99-.282-.38-.49-.808-.618-1.263-.128-.455-.174-.93-.136-1.403.038-.474.162-.935.363-1.357.201-.422.474-.797.803-1.106.329-.31.708-.548 1.12-.702.412-.154.848-.22 1.283-.194.435.026.86.13 1.25.303.39.173.74.411 1.032.702.292.291.521.632.674 1.007.153.375.227.776.217 1.18v4.5zm-10 0c0 .927-.245 1.835-.704 2.625-.46.79-1.163 1.43-2.003 1.81-.447.203-.938.33-1.45.36-.506.03-1.018-.025-1.504-.158-.486-.133-.945-.342-1.353-.618-.408-.276-.76-.61-1.042-.99-.282-.38-.49-.808-.618-1.263-.128-.455-.174-.93-.136-1.403.038-.474.162-.935.363-1.357.201-.422.474-.797.803-1.106.329-.31.708-.548 1.12-.702.412-.154.848-.22 1.283-.194.435.026.86.13 1.25.303.39.173.74.411 1.032.702.292.291.521.632.674 1.007.153.375.227.776.217 1.18v4.5z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-up">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">YOUR NAME</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">YOUR EMAIL</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">SUBJECT</label>
+                            <input type="text" id="subject" name="subject" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">YOUR MESSAGE</label>
+                            <textarea id="message" name="message" class="form-textarea" required></textarea>
+                        </div>
+                        <button type="submit" class="form-submit">SEND MESSAGE</button>
+                        <div id="formMessage" class="form-message"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EHTIJAD ALI</h3>
+                    <p>AI & ML Engineer specializing in deep learning, computer vision, and natural language processing. Transforming data into intelligent solutions.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/Ehtijad-Ali" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/Ehtijad-Ali" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.fiverr.com/sellers/saaimhl/edit" target="_blank" class="social-link">
+                            <svg class="fiverr-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm1.871 16.5h-1.742V7.5h1.742v9zm-3.484 0H8.645V7.5h1.742v9zm3.484-10.742h-5.226V4.258h5.226v1.5z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/hl_saaim" target="_blank" class="social-link">
+                            <svg class="instagram-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61579981664608" target="_blank" class="social-link">
+                            <svg class="facebook-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://medium.com/@ehtyalee1919" target="_blank" class="social-link">
+                            <i class="fab fa-medium"></i>
+                        </a>
+                        <a href="https://public.tableau.com/app/profile/ehtijad.ali1919/vizzes" target="_blank" class="social-link">
+                            <svg class="tableau-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.5 12.5c0 1.58-.875 2.95-2.148 3.56.84.38 1.543 1.02 2.003 1.81.459.79.704 1.698.704 2.624C23 22.43 21.43 24 19.494 24c-1.936 0-3.506-1.57-3.506-3.506 0-.926.245-1.834.704-2.624.46-.79 1.163-1.43 2.003-1.81.447-.203.938-.33 1.45-.36.506-.03 1.018.025 1.504.158.486.133.945.342 1.353.618.408.276.76.61 1.042.99.282.38.49.808.618 1.263.128.455.174.93.136 1.403zM12.5 22.5c0 .927-.245 1.835-.704 2.625-.46.79-1.163 1.43-2.003 1.81-.447.203-.938.33-1.45.36-.506.03-1.018-.025-1.504-.158-.486-.133-.945-.342-1.353-.618-.408-.276-.76-.61-1.042-.99-.282-.38-.49-.808-.618-1.263-.128-.455-.174-.93-.136-1.403.038-.474.162-.935.363-1.357.201-.422.474-.797.803-1.106.329-.31.708-.548 1.12-.702.412-.154.848-.22 1.283-.194.435.026.86.13 1.25.303.39.173.74.411 1.032.702.292.291.521.632.674 1.007.153.375.227.776.217 1.18v4.5zm-10 0c0 .927-.245 1.835-.704 2.625-.46.79-1.163 1.43-2.003 1.81-.447.203-.938.33-1.45.36-.506.03-1.018-.025-1.504-.158-.486-.133-.945-.342-1.353-.618-.408-.276-.76-.61-1.042-.99-.282-.38-.49-.808-.618-1.263-.128-.455-.174-.93-.136-1.403.038-.474.162-.935.363-1.357.201-.422.474-.797.803-1.106.329-.31.708-.548 1.12-.702.412-.154.848-.22 1.283-.194.435.026.86.13 1.25.303.39.173.74.411 1.032.702.292.291.521.632.674 1.007.153.375.227.776.217 1.18v4.5z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>QUICK LINKS</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#skills">SKILLS</a></li>
+                        <li><a href="#projects">PROJECTS</a></li>
+                        <li><a href="#experience">EXPERIENCE</a></li>
+                        <li><a href="#blog">BLOG</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>SERVICES</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">AI MODEL DEVELOPMENT</a></li>
+                        <li><a href="#">DATA ANALYSIS</a></li>
+                        <li><a href="#">MACHINE LEARNING CONSULTING</a></li>
+                        <li><a href="#">COMPUTER VISION SOLUTIONS</a></li>
+                        <li><a href="#">NLP APPLICATIONS</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>NEWSLETTER</h3>
+                    <p>Subscribe to get updates on my latest projects and articles.</p>
+                    <form id="newsletterForm">
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" class="form-input" required>
+                        </div>
+                        <button type="submit" class="form-submit">SUBSCRIBE</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EHTIJAD ALI. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Audio Elements -->
+    <audio id="bgMusic" loop>
+        <source src="assets/audio/music.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="clickSound">
+        <source src="assets/audio/click.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="hoverSound">
+        <source src="assets/audio/hoversound.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Noupe.com Chatbot Integration -->
+    <script src='https://www.noupe.com/embed/0199f5ea728370f1a58b73e9bf69a7843214.js'></script>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
