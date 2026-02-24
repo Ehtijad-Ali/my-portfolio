@@ -410,7 +410,7 @@ const blogPosts = [
         date: '2024-01-15',
         readTime: '8 min read',
         category: 'Computer Vision',
-        image: 'https://iili.io/K61ZAmJ.jpg',
+        image: 'https://i.ibb.co/m5RD1Zp0/signpost-5274077-1920.jpg',
         link: 'https://medium.com/@ehtyalee1919/object-detection-using-yolov5-detecting-road-conditions-in-gilgit-pakistan-6e62f30cad2e'
     },
     {
@@ -420,7 +420,7 @@ const blogPosts = [
         date: '2024-01-10',
         readTime: '10 min read',
         category: 'AI/ML',
-        image: 'https://iili.io/K61LlQp.jpg',
+        image: 'https://i.ibb.co/SX38D1wt/cv.jpg',
         link: 'https://medium.com/@ehtyalee1919/building-ai-content-detection-systems-9f7f1c28fa0b'
     },
     {
@@ -430,7 +430,7 @@ const blogPosts = [
         date: '2024-01-05',
         readTime: '12 min read',
         category: 'Machine Learning',
-        image: 'https://iili.io/K61QMoQ.png',
+        image: 'https://i.ibb.co/HfGWb3B7/re.png',
         link: 'https://medium.com/@ehtyalee1919/building-a-movie-recommendation-system-using-machine-learning-f00b33c051ac'
     }
 ];
@@ -464,7 +464,7 @@ const projects = [
         id: 1,
         title: 'AI Content Detection System',
         description: 'Advanced AI system for detecting and classifying various types of content with 99% accuracy using state-of-the-art deep learning models.',
-        image: 'https://iili.io/K61LcjR.jpg',
+        image: 'https://i.ibb.co/rKbhH2MQ/content-detector.png',
         techStack: ['Python', 'TensorFlow', 'NLP', 'Deep Learning'],
         category: 'ai-ml',
         github: 'https://github.com/Ehtijad-Ali',
@@ -474,7 +474,7 @@ const projects = [
         id: 2,
         title: 'Jarvis Chatbot',
         description: 'Intelligent conversational AI assistant capable of understanding context, learning from interactions, and providing human-like responses.',
-        image: 'https://iili.io/K61QWiB.png',
+        image: 'https://i.ibb.co/WWcFzvPB/jarvas.png',
         techStack: ['Python', 'NLP', 'Transformers', 'React'],
         category: 'ai-ml',
         github: 'https://github.com/Ehtijad-Ali',
@@ -484,7 +484,7 @@ const projects = [
         id: 3,
         title: 'AI Music Recommendation Model',
         description: 'Sophisticated machine learning system that analyzes user preferences and listening patterns to recommend personalized music with 95% accuracy.',
-        image: 'https://iili.io/K61QEDx.jpg',
+        image: 'https://i.ibb.co/vxN32ztN/musin-recommandation.jpg',
         techStack: ['Python', 'Scikit-learn', 'Pandas', 'Spotify API'],
         category: 'ai-ml',
         github: 'https://github.com/Ehtijad-Ali',
@@ -494,7 +494,7 @@ const projects = [
         id: 4,
         title: 'Data Science Salaries Dashboard',
         description: 'Interactive Tableau dashboard visualizing data science salary trends across different regions, experience levels, and specializations.',
-        image: 'https://iili.io/K61QlHu.jpg',
+        image: 'https://i.ibb.co/H3105ck/Data-Science.png',
         techStack: ['Tableau', 'Data Visualization', 'Analytics'],
         category: 'data-science',
         tableau: 'https://public.tableau.com/app/profile/ehtijad.ali1919/vizzes',
@@ -504,7 +504,7 @@ const projects = [
         id: 5,
         title: 'Netflix Data Dashboard',
         description: 'Comprehensive analytics dashboard for Netflix content and user data, providing insights into viewing patterns and content performance.',
-        image: 'https://iili.io/K61Qjl1.jpg',
+        image: 'https://i.ibb.co/RTGCbzj8/Netflix.png',
         techStack: ['Tableau', 'Data Analysis', 'Visualization'],
         category: 'data-science',
         tableau: 'https://public.tableau.com/app/profile/ehtijad.ali1919/vizzes',
@@ -514,7 +514,7 @@ const projects = [
         id: 6,
         title: 'AI Weather Reporter',
         description: 'An AI-powered web app that predicts and analyzes weather patterns using machine learning, offering visual insights and model performance metrics.',
-        image: 'https://iili.io/K61QKPI.png',
+        image: 'https://i.ibb.co/BVZWQMFm/weather.png',
         techStack: ['Python', 'Flask', 'JavaScript', 'ML Libraries'],
         category: 'web-apps',
         github: 'https://github.com/Ehtijad-Ali',
@@ -730,3 +730,4 @@ window.addEventListener('scroll', () => {
         parallax.style.transform = `translateY(${scrolled * 0.5}px)`;
     }
 });
+
